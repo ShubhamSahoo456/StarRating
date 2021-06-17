@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+h1{
+    position: absolute;
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding: 2rem 0;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+.star-rating {
+    
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+
+    .stars{
+        width: 30rem;
+        height:8rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        & .star{
+            font-size:4rem;
+            padding-left: 1.5rem;
+            list-style: none;
+            color: #fff;
+
+          
+        }
+
+        & .star:first-child{
+            padding-left: 0;
+        }
+
+        & .orange{
+            color: orange;
+        }
+
+        & .yellow {
+            color: yellow;
+        }
+
+    }
+
+    img{
+        box-shadow: 0px 2px 4px 5px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 0px 2px 4px 5px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 2px 4px 5px rgba(0,0,0,0.75);
+    
+    }
+
+    .output{
+        font-size: 2rem;
+        width: 30rem;
+        height: 4rem;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: -10px 10px 6px 6px rgba(0,0,0,0.75);
+        -webkit-box-shadow: -10px 10px 6px 6px rgba(0,0,0,0.75);
+        -moz-box-shadow: -10px 10px 6px 6px rgba(0,0,0,0.75);
+        background-color: #85FFBD;
+    }
+
+
+}
+
+.next{
+    font-size: 2rem;
+    width: 12rem;
+    height: 3rem;
+    font-weight: bolder;
+    background-color: #85FFBD;
+    outline: none;
+    border: none;
+    box-shadow: -10px 10px 6px 6px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -10px 10px 6px 6px rgba(0,0,0,0.75);
+    -moz-box-shadow: -10px 10px 6px 6px rgba(0,0,0,0.75);
+
+    &:hover{
+        color: #00b894;
+        background: #fff;
+        cursor: pointer;
+        border: 0.2rem solid #85FFBD;
+    }
+}
+
+@media(max-width:768px){
+    html{
+        font-size: 40%;
+    }
+}
+
+
+
+
